@@ -13,16 +13,16 @@
     <br> 
     <br> (点击展开完整思维导图)
     </h3>
-  </summary>
+  </summary>  
 
-  ![AI Agent Architecture Operations and Evolution Mindmap](./summaries/introduction-to-ai-agents/agents-architecture-operations-and-evolution-mindmap.jpg)
+  ![Introduction to AI Agents Mindmap](./summaries/introduction-to-ai-agents/agents-architecture-operations-and-evolution-mindmap.jpg)
  
 </details>
 
 
 ### 📑 Presentation Slides
 > 💡 **Tip:** Press `Ctrl` + `Click` (or Command + Click) to open in a new tab.   
-[📥 View the "AI Agent Architecture Operations and Evolution" Slides (PDF)](./summaries/introduction-to-ai-agents/agents-architecture-operations-slides.pdf)   
+[📥 View the "Introduction to AI Agents" Slides (PDF)](./summaries/introduction-to-ai-agents/agents-architecture-operations-slides.pdf)   
 [📥 **Download PDF** (Direct Link)](./summaries/introduction-to-ai-agents/agents-architecture-operations-slides.pdf?raw=true)  
 > 
   
