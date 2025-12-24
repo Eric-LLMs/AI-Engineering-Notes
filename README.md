@@ -1,5 +1,7 @@
 # Book Notes
-
+---
+<br>  
+  
 # 📚 Book Note: Introduction to AI Agents
 
 ### Here are my study notes
@@ -36,9 +38,8 @@ To bridge theory with practice, I developed a modular AI Agent project that impl
 
 👉 [**View AI Agent Project on Eric-LLMs GitHub**](https://github.com/Eric-LLMs/LLMs-Lab/tree/main/Agent/Agent_Project)
 
-  
-    
-  
+---
+<br>  
      
 # 📚 Book Note: Building LLMs for Production 
 
