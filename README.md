@@ -34,7 +34,7 @@ To bridge theory with practice, I developed a modular AI Agent project that impl
 * **Functional Tools:** Includes custom tools for deep data analysis (Excel processing via Pandas), automated communication via email, PDF-based QA interrogation (**FileQATool**), requirements-driven document generation (**WriterTool**), and dynamic script-based auditing of structured files using custom heuristics and thresholds (**PythonTool**).
 * **End-to-End Workflow:** Supports real-world scenarios, such as identifying underperforming suppliers from sales records and autonomously drafting/sending notifications.
 
-👉 [**View AI Agent Project on GitHub**](https://github.com/Eric-LLMs/LLMs-Lab/tree/main/Agent/Agent_Project)
+👉 [**View AI Agent Project on Eric-LLMs GitHub**](https://github.com/Eric-LLMs/LLMs-Lab/tree/main/Agent/Agent_Project)
 
 
      
@@ -67,6 +67,6 @@ To bridge theory with practice, I developed a modular AI Agent project that impl
 ### 🛠️ Hands-on Lab & Examples
 The production-grade principles discussed in this book—including **Fine-Tuning**, **RAG optimization**, **LangChain**, **Prompt Engineering**, **Function-Calling**, etc.—have each been researched as a standalone module, and each module features multiple project implementations.
 
-👉 [**Explore Practical LLM Examples in LLMs-Lab**](https://github.com/Eric-LLMs/LLMs-Lab)
+👉 [**Explore Practical LLM Examples in LLMs-Lab on Eric-LLMs GitHub**](https://github.com/Eric-LLMs/LLMs-Lab)
 
 
