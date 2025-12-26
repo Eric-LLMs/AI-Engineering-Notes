@@ -1,4 +1,6 @@
-# 📖 Learning Journey: ML & LLM Engineering
+# 📘 AI Engineering Notes
+
+###  A Comprehensive Guide to ML, DL, NLP, LLM & System Design
 
 <a id="top"></a>
 
