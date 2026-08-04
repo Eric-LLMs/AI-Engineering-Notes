@@ -12,7 +12,7 @@ Includes curated mind maps, presentation slides, and hands-on code covering AI a
 |:----------------------------------------------------------------------|:--------------------------------------------------------------|
 | Introduction to AI Agents                                             | [🔍 Explore](#introduction-to-ai-agents)                      |
 | Building LLMs for Production                                          | [🔍 Explore](#building-llms-for-production)                   |
-| Building High-Performance, Private AI Infrastructure for the Enterprise                           | [🔍 Explore](#high-performance-private-ai-infrastructure)           |
+| Building High-Performance, Private AI Infrastructure for the Enterprise (WIP)                          | [🔍 Explore](#high-performance-private-ai-infrastructure)           |
 | Mastering the Model Context Protocol (MCP)                            | [🔍 Explore](#mastering-the-model-context-protocol)           |
 | Agent Memory Part I  (A Survey of Memory)                             | [🔍 Explore](#agent-memory-part-i)                            |
 | Agent Memory Part II (Building Memory Modules for Agentic AI Systems) | [🔍 Explore](#building-memory-modules-for-agentic-ai-Systems) |
@@ -24,7 +24,7 @@ Includes curated mind maps, presentation slides, and hands-on code covering AI a
 # 📚 Introduction to AI Agents
   
 ### 🔑 Mind Map (Key Concepts)
-  [📥 **Download High-Resolution Mind Map** (.jpg)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/introduction-to-ai-agents/agents-architecture-operations-and-evolution-mindmap.jpg)
+[📥 **Download High-Resolution Mind Map** (.jpg)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/introduction-to-ai-agents/agents-architecture-operations-and-evolution-mindmap.jpg)
   <br>  
 <details>
   <summary>
@@ -110,8 +110,8 @@ The production-grade principles discussed in this book—including **Fine-Tuning
 
 <a id="high-performance-private-ai-infrastructure"></a>   
   
-# 📚 Building High-Performance, Private AI Infrastructure for the Enterprise WIP (Work In Progress)
-Covers the full-stack AI infrastructure for the enterprise — AI chips, compute clusters, high-speed networking, distributed training, inference serving, cluster scheduling, and secure private deployment. *(Work in Progress)*
+# 📚 Building High-Performance, Private AI Infrastructure for the Enterprise (WIP)
+Covers the full-stack AI infrastructure for the enterprise — AI chips, compute clusters, high-speed networking, distributed training, inference serving, cluster scheduling, and secure private deployment.
 
 ### 🛠️ Hands-on Projects & Tools  
 
@@ -215,7 +215,7 @@ The official Model Context Protocol SDKs and reference implementations for build
 
 <a id="agent-memory-part-i"></a>   
  
-# 📚 Agent Memory Part I 
+# 📚 Agent Memory Part I
 A survey of academic research on how agent memory is designed and categorized (forms, functions, dynamics).
 
 ### 🔑 Mind Map (Key Concepts)
@@ -249,7 +249,7 @@ A survey of academic research on how agent memory is designed and categorized (f
 ### 📑 Further Reading / Resources
 
 For a comprehensive list of papers related to Agent Memory, we highly recommend checking out:  
-👉  * [Agent-Memory-Paper-List](https://github.com/Shichun-Liu/Agent-Memory-Paper-List) by Shichun-Liu.
+👉 [Agent-Memory-Paper-List](https://github.com/Shichun-Liu/Agent-Memory-Paper-List) by Shichun-Liu.
 
 
 [⬆️ Back to Top : Table of Contents](#top)  
@@ -389,6 +389,13 @@ To prevent "cheating" through shared state, every evaluation trial runs in a fre
 * **Mocking & Replay**: Simulate external APIs — or record-and-replay real responses — to control latency and produce deterministic, reproducible outputs.
 * **Determinism**: Fix seeds and use `temperature=0` so runs are repeatable and differences are attributable to code, not randomness.
 * **Cleanup & Anti-Leakage**: Aggressive state teardown (no shared history) and guard against goal leakage that could let the agent take shortcuts via shared state.
+
+### 📑 Further Reading / Resources
+
+For deeper reading on evaluating AI agents, check out:
+* [Anthropic — Evaluating AI Agents](https://www.anthropic.com/engineering/evaluating-ai-agents)
+* [LangSmith Evaluation Docs](https://docs.smith.langchain.com/evaluation)
+* [OpenAI Evals Framework](https://github.com/openai/evals)
 
 [⬆️ Back to Top : Table of Contents](#top)
 
