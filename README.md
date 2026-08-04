@@ -23,9 +23,7 @@ The guides below combine slides, mind maps, and hands-on code to move from conce
   
 # 📚 Introduction to AI Agents
   
-### 🔑 Key Concepts  
-
-### 🧠 Mind Map (Key Concepts)
+### 🔑 Mind Map (Key Concepts)
   [📥 **Download High-Resolution Mind Map** (.jpg)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/introduction-to-ai-agents/agents-architecture-operations-and-evolution-mindmap.jpg)
   <br>  
 <details>
@@ -56,7 +54,7 @@ To bridge theory with practice, I developed a modular AI Agent project that impl
 * **Functional Tools:** Includes custom tools for deep data analysis (Excel processing via Pandas), automated communication via email, PDF-based QA interrogation (**FileQATool**), requirements-driven document generation (**WriterTool**), and dynamic script-based auditing of structured files using custom heuristics and thresholds (**PythonTool**).
 * **End-to-End Workflow:** Supports real-world scenarios, such as identifying underperforming suppliers from sales records and autonomously drafting/sending notifications.
 
-### 🧰 Key Frameworks & References
+### 🧰 Key Open-Source Projects & References
 
 The following open-source projects represent prominent examples of agentic AI engineering:
 
@@ -80,9 +78,7 @@ The following open-source projects represent prominent examples of agentic AI en
 # 📚 Building LLMs for Production 
 This guide covers LLM production, from Transformer architectures to advanced techniques like RAG and Fine-Tuning. It explores frameworks like LangChain, methods to mitigate hallucinations, and optimization via quantization. Learn to build autonomous agents for real-world use.
 
-### 🔑 Key Concepts  
-
-### 🧠 Mind Map (Key Concepts)
+### 🔑 Mind Map (Key Concepts)
 [📥 **Download High-Resolution Mind Map** (.jpg)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/building-llms-for-production/building-llms-for-production-mindmap.jpg)
 <br>  
 <details>
@@ -117,9 +113,7 @@ The production-grade principles discussed in this book—including **Fine-Tuning
   
 # 📚 Building High-Performance, Private AI Infrastructure for the Enterprise WIP (Work In Progress)
 
-### 🔑 Key Concepts  
-
-### 🧠 Mind Map (Key Concepts)
+### 🔑 Mind Map (Key Concepts)
 
 
 ### 📑 Presentation Slides
@@ -127,9 +121,55 @@ The production-grade principles discussed in this book—including **Fine-Tuning
 
 ## 🛠️ Hands-on Projects and Examples  
 
-👉 WIP (Work In Progress)
+**I. AI Infrastructure**
 
-👉 **[Explore AIInfra — AI Infrastructure Reference](https://github.com/Infrasys-AI/AIInfra)** *An open-source reference covering the full-stack AI infrastructure for LLMs — from AI chips, compute clusters, and high-speed networking, to distributed training, inference optimization, and deployment — a hands-on resource for building high-performance, private AI infrastructure for the enterprise.*
+* **[AIInfra — AI Infrastructure Reference](https://github.com/Infrasys-AI/AIInfra):** An open-source reference covering the full-stack AI infrastructure for LLMs — from AI chips, compute clusters, and high-speed networking, to distributed training, inference optimization, and deployment — a hands-on resource for building high-performance, private AI infrastructure for the enterprise.
+
+**II. Inference Serving — High-Performance LLM Serving**
+
+* **[vLLM](https://github.com/vllm-project/vllm):** A high-throughput, memory-efficient LLM serving engine (PagedAttention, continuous batching, prefix caching) — the de facto standard for high-performance private inference.
+
+* **[SGLang](https://github.com/sgl-project/sglang):** A fast, structured-generation runtime for LLM inference, complementing vLLM with radix attention and efficient prefix reuse.
+
+**III. Training, Pre-training & Fine-tuning**
+
+* **[DeepSpeed](https://github.com/microsoft/DeepSpeed):** Microsoft's deep learning optimization library — ZeRO memory optimization, mixed precision, and system optimizations for training and fine-tuning models at massive scale.
+
+* **[Megatron-LM](https://github.com/NVIDIA/Megatron-LM):** NVIDIA's large-scale language model training framework — tensor, pipeline, and sequence parallelism, often paired with DeepSpeed for pre-training.
+
+* **[Unsloth](https://github.com/unslothai/unsloth):** A fast, memory-efficient fine-tuning library — up to 2x faster and 70% less memory for LoRA/QLoRA fine-tuning of LLMs.
+
+* **[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory):** A config-driven fine-tuning platform supporting LoRA, QLoRA, and full-parameter tuning across many open LLMs.
+
+* **[HuggingFace PEFT](https://github.com/huggingface/peft):** The standard parameter-efficient fine-tuning library — LoRA, QLoRA, and more — widely used for enterprise model customization.
+
+**IV. Cluster Scheduling & Orchestration**
+
+* **[Volcano](https://github.com/volcano-sh/volcano):** A Kubernetes-native batch system with advanced GPU scheduling and job queueing — widely adopted for enterprise AI clusters.
+
+* **[KubeRay](https://github.com/ray-project/kuberay):** A Kubernetes operator for running Ray clusters, bridging distributed compute with cloud-native orchestration.
+
+**V. Unified Gateway**
+
+* **[LiteLLM](https://github.com/BerriAI/litellm):** A unified LLM gateway with an OpenAI-compatible API — model routing, rate limits, budgets, and logging for enterprise private deployments.
+
+**VI. Distributed Computing**
+
+* **[Ray](https://github.com/ray-project/ray):** A unified distributed framework for AI training, inference, and serving at scale.
+
+**VII. Lightweight Private Deployment**
+
+* **[Ollama](https://github.com/ollama/ollama):** The simplest way to run LLMs locally — a lightweight, self-hosted private deployment option.
+
+* **[LocalAI](https://github.com/mudler/LocalAI):** A local, OpenAI-compatible, self-hosted inference server for private model deployment.
+
+**VIII. Security & Guardrails**
+
+* **[NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails):** NVIDIA's programmable guardrails framework for conversational AI — input, output, and retrieval rails.
+* **[PurpleLlama / Llama Guard](https://github.com/meta-llama/PurpleLlama):** Meta's Llama security toolkit — Llama Guard content-safety classifier and Prompt Guard injection detection.
+* **[Garak](https://github.com/NVIDIA/garak):** NVIDIA's LLM vulnerability scanner for automated red-teaming.
+* **[LLM Guard](https://github.com/protectai/llm-guard):** Protect AI's input/output security library for detecting prompt injection and sanitizing LLM traffic.
+* **[Microsoft Presidio](https://github.com/microsoft/presidio):** PII detection and data anonymization for compliance in enterprise AI deployments.
 
 [⬆️ Back to Top : Table of Contents](#top)  
   
@@ -141,9 +181,7 @@ The production-grade principles discussed in this book—including **Fine-Tuning
  
 # 📚 Mastering the Model Context Protocol (MCP)  
 
-### 🔑 Key Concepts  
-
-### 🧠 Mind Map (Key Concepts)
+### 🔑 Mind Map (Key Concepts)
 [📥 **Download High-Resolution Mind Map** (.jpg)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/mastering-the-model-context-protocol/mastering-the-model-context-protocol-mindmap.jpg)
 <br>  
 <details>
@@ -177,9 +215,7 @@ The production-grade principles discussed in this book—including **Fine-Tuning
  
 # 📚 Agent Memory Part I 
 
-### 🔑 Key Concepts  
-
-### 🧠 Mind Map (Key Concepts)
+### 🔑 Mind Map (Key Concepts)
 [📥 **Download High-Resolution Mind Map** (.jpg)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/memory-in-the-age-of-ai-agents-survey/unforgettable_agents_architecting_ai_memory-mindmap.jpg)
 <br>  
 <details>
@@ -224,9 +260,7 @@ For a comprehensive list of papers related to Agent Memory, we highly recommend 
 # 📚 Building Memory Modules for Agentic AI Systems
 A comprehensive guide on designing memory systems for AI Agents. This document synthesizes academic surveys with practical implementation strategies, covering: * Theory: Taxonomy of agent memory (Forms, Functions, Dynamics). * Frameworks: Deep dive into Mem0, Letta (MemGPT), and LangMem. * Practice: Enterprise-grade solutions using Amazon Bedrock AgentCore  
 
-### 🔑 Key Concepts  
-
-### 🧠 Mind Map (Key Concepts)
+### 🔑 Mind Map (Key Concepts)
 [📥 **Download High-Resolution Mind Map** (mindmap.png)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/building-memory-for-agentic-ai-theory-frameworks-and-practice/building-memory-for-agentic-ai-theory-frameworks-and-practice-mindmap.png)
 <br>  
 <details>
@@ -254,6 +288,7 @@ The following frameworks and repositories are discussed in this guide, represent
 * **[Mem0](https://github.com/mem0ai/mem0)**: A dual-layer memory framework supporting working, factual, and semantic memory types for agent state persistence.
 * **[Letta (MemGPT)](https://github.com/letta-ai/letta)**: Manages infinite context by treating agents like an OS with virtual memory and recursive summarization.
 * **[LangMem](https://github.com/langchain-ai/langmem)**: A LangChain library that implements Semantic, Episodic, and Procedural memory integration for LangGraph agents.
+* **[Zep / Graphiti](https://github.com/getzep/graphiti)**: Zep's temporal knowledge-graph framework — builds a dynamic, time-aware memory graph for agent state with causal event support.
 * **[Amazon Bedrock Samples](https://github.com/aws-samples/amazon-bedrock-samples)**
   Comprehensive collection of examples for using Amazon Bedrock, including various implementations of Agentic workflows and memory patterns.  
   
@@ -274,18 +309,26 @@ It synthesizes industry standards from Anthropic, LangChain, and real-world engi
 
 ---
 
-### 🔑 Key Concepts
-* **The Intuition Trap**: Why manual "vibe checks" fail as complexity scales.
-* **The Harness**: Building a standardized environment for agent execution composed of Inputs, Tasks, and Graders.
-* **Trajectory vs. Outcome**: Evaluating the *journey* (reasoning logs, tool calls) rather than just the *destination* (final answer).
-* **Reliability Metrics**:
-    * **Pass@k (Creativity)**: Can the agent succeed *at least once* in k tries? (Good for brainstorming).
-    * **Pass^k (Reliability)**: Can the agent succeed *every single time* in k tries? (Critical for autonomous agents).
-* **Swiss Cheese Model**: Layering defenses (Automated Evals → Human Review → Production Monitoring) to ensure reliability.
+### 🔑 Key Considerations
 
----
+| Consideration | Description |
+| :--- | :--- |
+| The Intuition Trap | Why manual "vibe checks" fail as complexity scales. |
+| The Harness | Building a standardized environment for agent execution composed of Inputs, Tasks, and Graders. |
+| Trajectory vs. Outcome | Evaluating the *journey* (reasoning logs, tool calls) rather than just the *destination* (final answer). |
+| Reliability Metrics — Pass@k | Can the agent succeed *at least once* in k tries? (Good for brainstorming). |
+| Reliability Metrics — Pass^k | Can the agent succeed *every single time* in k tries? (Critical for autonomous agents). |
+| Swiss Cheese Model | Layering defenses (Automated Evals → Human Review → Production Monitoring) to ensure reliability. |
+| LLM-as-a-Judge | Using LLMs to grade outputs — with known biases (position bias, self-preference) that need calibration. |
+| Task Benchmarks | Standardized suites (SWE-bench, GAIA, AgentBench, τ-bench, WebArena) for measuring real-world task success. |
+| Tool-Call Correctness | Verifying the right tool, right arguments, and right timing — beyond just the final answer. |
+| Process Supervision | Grading intermediate reasoning and tool-call steps, not only the outcome, to catch errors early. |
+| Adversarial Robustness | Stress-testing against prompt injection and goal hijacking. |
+| Agent Security | Testing permission boundaries, tool authorization, and data-handling safety — ensuring the agent cannot overstep access or leak sensitive data. |
+| Cost & Latency | Token efficiency, wall-clock time, and per-task budget — decisive for production agents. |
+| Long-Horizon Tasks | Sustained multi-step planning and memory over long-running tasks. |
 
-### 🧠 Mind Map (Framework Overview)
+### 🔑 Mind Map (Framework Overview)
 [📥 **Download High-Resolution Mind Map** (mindmap.png)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/agent-evaluation/ai-agent-evaluation-framework.png)
 <br>  
 <details>
@@ -310,7 +353,7 @@ A Comprehensive Guide to Evaluating AI Agents Focuses on the engineering framewo
 
 ---
 
-### 🛠️ Key Frameworks & Code Samples
+### 🛠️ Key Tools, Frameworks & Strategies
 
 #### 1. The Tooling Stack (Ecosystem)
 Implementing a robust evaluation pipeline requires specific infrastructure. The following tools are referenced and utilized in this framework:
@@ -321,6 +364,11 @@ Implementing a robust evaluation pipeline requires specific infrastructure. The 
 | **[LangFuse](https://langfuse.com/)** | Observability | Open-source alternative for observability, prompt management, and lightweight evaluation. |
 | **[DeepEval](https://github.com/confident-ai/deepeval)** | Unit Testing | "Pytest for LLMs". Specific metrics for RAG (Hallucination, Answer Relevancy) and Agents. |
 | **[OpenEvals](https://github.com/langchain-ai/openevals)** | Graders | A library of pre-built "LLM-as-a-judge" prompts (Conciseness, Correctness, Coherence) compatible with LangSmith. |
+| **[AgentOps](https://github.com/AgentOps-AI/agentops)** | Agent DevOps & Monitoring | Session replays, agent benchmarking, and cost & reliability tracking for autonomous agents. |
+| **[Promptfoo](https://github.com/promptfoo/promptfoo)** | Red Teaming & Regression | Declarative eval configs, LLM regression testing, and adversarial red-teaming. |
+| **[Braintrust](https://github.com/braintrustdata/braintrust-sdk)** | Evaluation Platform | Dataset management, LLM-as-a-judge scoring, online evals, and A/B testing. |
+| **[Arize Phoenix](https://github.com/Arize-ai/phoenix)** | Observability & Eval | Open-source LLM tracing, embedding analysis, and RAG/agent evaluation. |
+| **[W&B Weave](https://github.com/wandb/weave)** | Tracing & Eval | Lightweight LLM instrumentation, eval harnesses, and dataset versioning. |
 
 #### 2. Architecture: Hybrid Agent (Fast vs. Slow)
 To balance cost and performance, we implement a **Hybrid Agent Architecture**:
@@ -328,11 +376,17 @@ To balance cost and performance, we implement a **Hybrid Agent Architecture**:
 * **Deliberative Layer (System 2)**: Activated for complex planning or multi-step reasoning tasks.
 * **Coordination Layer**: A router that classifies intent and dispatches tasks.
 
+Each layer is evaluated with different metrics:
+* **Reactive Layer**: latency and single-step accuracy.
+* **Deliberative Layer**: task completion rate, multi-step planning correctness, and trajectory quality.
+* **Coordination Layer**: intent classification accuracy — misrouting is a common source of downstream failures.
+
 #### 3. Evaluation Strategy: The "Clean Room"
 To prevent "cheating" through shared state, every evaluation trial runs in a fresh container/sandbox.
-* **Isolation**: Fresh container for every trial.
-* **Mocking**: Simulate external APIs to control latency and deterministic outputs.
-* **Cleanup**: Aggressive state teardown (no shared history).
+* **Isolation**: Fresh container for every trial, plus state reset (environment, conversation history) and snapshot rollback to guarantee a clean slate.
+* **Mocking & Replay**: Simulate external APIs — or record-and-replay real responses — to control latency and produce deterministic, reproducible outputs.
+* **Determinism**: Fix seeds and use `temperature=0` so runs are repeatable and differences are attributable to code, not randomness.
+* **Cleanup & Anti-Leakage**: Aggressive state teardown (no shared history) and guard against goal leakage that could let the agent take shortcuts via shared state.
 
 [⬆️ Back to Top : Table of Contents](#top)
 
