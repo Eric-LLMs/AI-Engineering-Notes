@@ -1,8 +1,8 @@
 # 📘 Awesome AI Engineering   
 
-####  The Full-Stack LLM Engineering Playbook.
+### The Full-Stack LLM Engineering Playbook
 
-The guides below combine slides, mind maps, and hands-on code to move from concept to implementation. For a deep dive into the research frontier, explore the [📖 LLM Technology Landscape & Evolution](https://github.com/Eric-LLMs/LLMs-Lab/tree/main/Docs) — a curated reading list covering the full LLM stack, from model architectures and training, fine-tuning, inference optimization, reasoning, and Agent systems.  
+Includes curated mind maps, presentation slides, and hands-on code covering AI agents, LLM production, private AI infrastructure, the Model Context Protocol, and agent evaluation. For a deep dive into the research frontier, explore the [📖 LLM Technology Landscape & Evolution](https://github.com/Eric-LLMs/LLMs-Lab/tree/main/Docs) — a curated reading list covering the full LLM stack, from model architectures and training, fine-tuning, inference optimization, reasoning, and Agent systems.  
 
 <a id="top"></a>
 
@@ -41,10 +41,9 @@ The guides below combine slides, mind maps, and hands-on code to move from conce
 > 💡 **Tip:** Press `Ctrl` + `Click` (or Command + Click) to open in a new tab.   
 [📥 View the "Introduction to AI Agents" Slides (PDF)](./summaries/introduction-to-ai-agents/agents-architecture-operations-slides.pdf)   
 [📥 **Download PDF** (Direct Link)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/introduction-to-ai-agents/agents-architecture-operations-slides.pdf)  
-> 
   
 
-### 🚀 Hands-on: A Minimal ReAct Agent  
+### 🛠️ Hands-on: A Minimal ReAct Agent  
 👉 [**View the AI Agent Project in the LLMs-Lab repository on the Eric-LLMs GitHub profile.**](https://github.com/Eric-LLMs/LLMs-Lab/tree/main/Agent/Agent_Project)
   
 To bridge theory with practice, I developed a modular AI Agent project that implements autonomous reasoning and task execution:
@@ -112,14 +111,9 @@ The production-grade principles discussed in this book—including **Fine-Tuning
 <a id="high-performance-private-ai-infrastructure"></a>   
   
 # 📚 Building High-Performance, Private AI Infrastructure for the Enterprise WIP (Work In Progress)
+Covers the full-stack AI infrastructure for the enterprise — AI chips, compute clusters, high-speed networking, distributed training, inference serving, cluster scheduling, and secure private deployment. *(Work in Progress)*
 
-### 🔑 Mind Map (Key Concepts)
-
-
-### 📑 Presentation Slides
-
-
-## 🛠️ Hands-on Projects and Examples  
+### 🛠️ Hands-on Projects & Tools  
 
 **I. AI Infrastructure**
 
@@ -180,6 +174,7 @@ The production-grade principles discussed in this book—including **Fine-Tuning
 <a id="mastering-the-model-context-protocol"></a>   
  
 # 📚 Mastering the Model Context Protocol (MCP)  
+A deep dive into the Model Context Protocol (MCP) — the open standard that connects AI agents to tools and data sources. Covers the protocol architecture, official SDKs, and production server implementations.
 
 ### 🔑 Mind Map (Key Concepts)
 [📥 **Download High-Resolution Mind Map** (.jpg)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/mastering-the-model-context-protocol/mastering-the-model-context-protocol-mindmap.jpg)
@@ -202,7 +197,14 @@ The production-grade principles discussed in this book—including **Fine-Tuning
 [📥 **Download PDF** (Direct Link)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/mastering-the-model-context-protocol/mastering-the-model-context-protocol-slides.pdf)
   
 
-## 🛠️ Hands-on Projects and Examples  
+### 🧰 Key Frameworks & Tools
+
+The official Model Context Protocol SDKs and reference implementations for building and connecting MCP servers:
+* **[typescript-sdk](https://github.com/modelcontextprotocol/typescript-sdk)**: The official TypeScript SDK for building MCP servers and clients.
+* **[python-sdk](https://github.com/modelcontextprotocol/python-sdk)**: The official Python SDK for building MCP servers and clients.
+* **[servers — Official Reference Implementations](https://github.com/modelcontextprotocol/servers)**: The official collection of reference MCP servers, including filesystem, fetch, git, memory, and sequential thinking.
+
+### 🛠️ Hands-on Projects & Tools  
 
 👉 **[Explore Model Context Protocol (MCP) Projects on GitHub](https://github.com/Eric-LLMs/awesome-mcp-servers)** *A curated collection of industry-standard Model Context Protocol (MCP) server implementations.*
 
@@ -214,6 +216,7 @@ The production-grade principles discussed in this book—including **Fine-Tuning
 <a id="agent-memory-part-i"></a>   
  
 # 📚 Agent Memory Part I 
+A survey of academic research on how agent memory is designed and categorized (forms, functions, dynamics).
 
 ### 🔑 Mind Map (Key Concepts)
 [📥 **Download High-Resolution Mind Map** (.jpg)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/memory-in-the-age-of-ai-agents-survey/unforgettable_agents_architecting_ai_memory-mindmap.jpg)
@@ -258,7 +261,7 @@ For a comprehensive list of papers related to Agent Memory, we highly recommend 
 <a id="building-memory-modules-for-agentic-ai-Systems"></a>   
  
 # 📚 Building Memory Modules for Agentic AI Systems
-A comprehensive guide on designing memory systems for AI Agents. This document synthesizes academic surveys with practical implementation strategies, covering: * Theory: Taxonomy of agent memory (Forms, Functions, Dynamics). * Frameworks: Deep dive into Mem0, Letta (MemGPT), and LangMem. * Practice: Enterprise-grade solutions using Amazon Bedrock AgentCore  
+A comprehensive guide on designing memory systems for AI Agents. This document synthesizes academic surveys with practical implementation strategies — covering the taxonomy of agent memory (forms, functions, dynamics), deep dives into Mem0, Letta (MemGPT), and LangMem, and enterprise-grade solutions using Amazon Bedrock AgentCore.  
 
 ### 🔑 Mind Map (Key Concepts)
 [📥 **Download High-Resolution Mind Map** (mindmap.png)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/building-memory-for-agentic-ai-theory-frameworks-and-practice/building-memory-for-agentic-ai-theory-frameworks-and-practice-mindmap.png)
@@ -282,15 +285,14 @@ A comprehensive guide on designing memory systems for AI Agents. This document s
 [📥 View Slides (PDF)](./summaries/building-memory-for-agentic-ai-theory-frameworks-and-practice/building-memory-for-agentic-ai-theory-frameworks-and-practice.pdf)   
 [📥 **Download PDF** (Direct Link)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/building-memory-for-agentic-ai-theory-frameworks-and-practice/building-memory-for-agentic-ai-theory-frameworks-and-practice.pdf)
 
-### 📑 Key Frameworks & Code Samples
+### 🧰 Key Frameworks & Code Samples
 
 The following frameworks and repositories are discussed in this guide, representing the current state-of-the-art in Agentic Memory:  
 * **[Mem0](https://github.com/mem0ai/mem0)**: A dual-layer memory framework supporting working, factual, and semantic memory types for agent state persistence.
 * **[Letta (MemGPT)](https://github.com/letta-ai/letta)**: Manages infinite context by treating agents like an OS with virtual memory and recursive summarization.
 * **[LangMem](https://github.com/langchain-ai/langmem)**: A LangChain library that implements Semantic, Episodic, and Procedural memory integration for LangGraph agents.
 * **[Zep / Graphiti](https://github.com/getzep/graphiti)**: Zep's temporal knowledge-graph framework — builds a dynamic, time-aware memory graph for agent state with causal event support.
-* **[Amazon Bedrock Samples](https://github.com/aws-samples/amazon-bedrock-samples)**
-  Comprehensive collection of examples for using Amazon Bedrock, including various implementations of Agentic workflows and memory patterns.  
+* **[Amazon Bedrock Samples](https://github.com/aws-samples/amazon-bedrock-samples)**: A comprehensive collection of examples for using Amazon Bedrock, including various implementations of Agentic workflows and memory patterns.
   
 [⬆️ Back to Top : Table of Contents](#top)  
   
@@ -345,7 +347,7 @@ It synthesizes industry standards from Anthropic, LangChain, and real-world engi
 ---
 
 ### 📑 Presentation Slides
-A Comprehensive Guide to Evaluating AI Agents Focuses on the engineering framework for testing, including the "Clean Room" methodology, reliability metrics (Pass@k), and the "Harness" architecture. It treats evaluation as a core development practice.
+A comprehensive guide to evaluating AI agents, focusing on the engineering framework for testing — including the "Clean Room" methodology, reliability metrics (Pass@k), and the "Harness" architecture. It treats evaluation as a core development practice.
 
 > 💡 **Tip:** Press `Ctrl` + `Click` (or Command + Click) to open in a new tab.   
 [📥 View Slides (PDF)](./summaries/agent-evaluation/agent-evaluation-engineering.pdf)   
@@ -353,7 +355,7 @@ A Comprehensive Guide to Evaluating AI Agents Focuses on the engineering framewo
 
 ---
 
-### 🛠️ Key Tools, Frameworks & Strategies
+### 🧰 Key Tools, Frameworks & Strategies
 
 #### 1. The Tooling Stack (Ecosystem)
 Implementing a robust evaluation pipeline requires specific infrastructure. The following tools are referenced and utilized in this framework:
