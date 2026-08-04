@@ -58,11 +58,12 @@ To bridge theory with practice, I developed a modular AI Agent project that impl
 
 ### 🧰 Key Frameworks & References
 
-The following open-source projects represent the current frontier in agentic AI engineering:
+The following open-source projects represent prominent examples of agentic AI engineering:
 
 | Project | Description | Key Strengths |
 | :--- | :--- | :--- |
 | **[Claude Code](https://github.com/anthropics/claude-code)** | Anthropic's official terminal-based agentic coding tool | Agentic coding, terminal-native, full codebase understanding, git workflows |
+| **[OpenAI Codex](https://github.com/openai/codex)** | OpenAI's open-source agentic coding CLI | Agentic coding, terminal-native, sandboxed execution, bash tool use |
 | **[Hermes-Agent](https://github.com/NousResearch/hermes-agent)** | Self-improving AI agent with built-in learning loop | Skill creation from experience, cross-session memory, multi-channel (CLI/Telegram/Discord/Slack) |
 | **[OpenClaw](https://github.com/openclaw/openclaw)** | Personal AI assistant, local-first, any OS/platform | Local-first Gateway, multi-channel messaging, voice support, session & tool management |
 | **[claurst](https://github.com/Kuberwastaken/claurst)** | Community-maintained reference implementation of Claude Code | Internal architecture study, reverse-engineering insights, codebase structure reference |
@@ -127,6 +128,8 @@ The production-grade principles discussed in this book—including **Fine-Tuning
 ## 🛠️ Hands-on Projects and Examples  
 
 👉 WIP (Work In Progress)
+
+👉 **[Explore AIInfra — AI Infrastructure Reference](https://github.com/Infrasys-AI/AIInfra)** *An open-source reference covering the full-stack AI infrastructure for LLMs — from AI chips, compute clusters, and high-speed networking, to distributed training, inference optimization, and deployment — a hands-on resource for building high-performance, private AI infrastructure for the enterprise.*
 
 [⬆️ Back to Top : Table of Contents](#top)  
   
