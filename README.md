@@ -393,8 +393,8 @@ To prevent "cheating" through shared state, every evaluation trial runs in a fre
 ### 📑 Further Reading / Resources
 
 For deeper reading on evaluating AI agents, check out:
-* [Anthropic — Evaluating AI Agents](https://www.anthropic.com/engineering/evaluating-ai-agents)
-* [LangSmith Evaluation Docs](https://docs.smith.langchain.com/evaluation)
+* [Anthropic — Demystifying Evals for AI Agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)
+* [LangSmith Evaluation Docs](https://docs.langchain.com/langsmith/evaluation-concepts)
 * [OpenAI Evals Framework](https://github.com/openai/evals)
 
 [⬆️ Back to Top : Table of Contents](#top)
