@@ -2,7 +2,7 @@
 
 ### The Full-Stack LLM Engineering Playbook
 
-Includes curated mind maps, presentation slides, and hands-on code covering AI agents, LLM production, private AI infrastructure, the Model Context Protocol, and agent evaluation. For a deep dive into the research frontier, explore the [📖 LLM Technology Landscape & Evolution](https://github.com/Eric-LLMs/LLMs-Lab/tree/main/Docs) — a curated reading list covering the full LLM stack, from model architectures and training, fine-tuning, inference optimization, reasoning, and Agent systems.  
+A full-stack LLM engineering playbook — practical guides for building, deploying, and evaluating LLM systems and AI agents. For a deep dive into the research frontier, explore the [📖 LLM Technology Landscape & Evolution](https://github.com/Eric-LLMs/LLMs-Lab/tree/main/Docs) — a curated reading list covering the full LLM stack, from model architectures and training, fine-tuning, inference optimization, reasoning, and Agent systems.  
 
 <a id="top"></a>
 
