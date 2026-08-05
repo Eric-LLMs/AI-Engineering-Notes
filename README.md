@@ -303,11 +303,7 @@ The following frameworks and repositories are discussed in this guide, represent
   
 # 📚 Agent Evaluation (Eval) Engineering
 
-> *"In the age of Agents, your product is only as good as your ability to measure it."*
-
 Evaluating AI Agents requires a fundamental shift from simple output checks ("vibe checks") to analyzing multi-step trajectories, environment changes, and tool usage. This repository consolidates frameworks and engineering practices for moving from **intuition to instrumentation**.
-
-It synthesizes industry standards from Anthropic, LangChain, and real-world engineering practices to build a robust **Evaluation Harness**.
 
 ---
 
@@ -371,6 +367,7 @@ Implementing a robust evaluation pipeline requires specific infrastructure. The 
 | **[Braintrust](https://github.com/braintrustdata/braintrust-sdk)** | Evaluation Platform | Dataset management, LLM-as-a-judge scoring, online evals, and A/B testing. |
 | **[Arize Phoenix](https://github.com/Arize-ai/phoenix)** | Observability & Eval | Open-source LLM tracing, embedding analysis, and RAG/agent evaluation. |
 | **[W&B Weave](https://github.com/wandb/weave)** | Tracing & Eval | Lightweight LLM instrumentation, eval harnesses, and dataset versioning. |
+| **[OpenAI Evals](https://github.com/openai/evals)** | Evaluation Framework | OpenAI's open-source framework for model-graded evals — YAML/JSON config-driven, custom eval classes, and dataset registries. |
 
 #### 2. Architecture: Hybrid Agent (Fast vs. Slow)
 To balance cost and performance, we implement a **Hybrid Agent Architecture**:
@@ -389,13 +386,6 @@ To prevent "cheating" through shared state, every evaluation trial runs in a fre
 * **Mocking & Replay**: Simulate external APIs — or record-and-replay real responses — to control latency and produce deterministic, reproducible outputs.
 * **Determinism**: Fix seeds and use `temperature=0` so runs are repeatable and differences are attributable to code, not randomness.
 * **Cleanup & Anti-Leakage**: Aggressive state teardown (no shared history) and guard against goal leakage that could let the agent take shortcuts via shared state.
-
-### 📑 Further Reading / Resources
-
-For deeper reading on evaluating AI agents, check out:
-* [Anthropic — Demystifying Evals for AI Agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)
-* [LangSmith Evaluation Docs](https://docs.langchain.com/langsmith/evaluation-concepts)
-* [OpenAI Evals Framework](https://github.com/openai/evals)
 
 [⬆️ Back to Top : Table of Contents](#top)
 
