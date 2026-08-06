@@ -1,5 +1,7 @@
 # 📘 Awesome AI Engineering   
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 ### The Full-Stack LLM Engineering Playbook
 
 A full-stack LLM engineering playbook — practical guides for building, deploying, and evaluating LLM systems and AI agents. For a deep dive into the research frontier, explore the [📖 LLM Technology Landscape & Evolution](https://github.com/Eric-LLMs/LLMs-Lab/tree/main/Docs) — a curated reading list covering the full LLM stack, from model architectures and training, fine-tuning, inference optimization, reasoning, and Agent systems.  
@@ -10,18 +12,18 @@ A full-stack LLM engineering playbook — practical guides for building, deployi
 
 | 📚 Content                                                       | 🔗 Quick Link                                                 |
 |:----------------------------------------------------------------------|:--------------------------------------------------------------|
-| Introduction to AI Agents                                             | [🔍 Explore](#introduction-to-ai-agents)                      |
+| Building AI Agents                                             | [🔍 Explore](#building-ai-agents)                      |
 | Building LLMs for Production                                          | [🔍 Explore](#building-llms-for-production)                   |
-| Building High-Performance, Private AI Infrastructure for the Enterprise (WIP)                          | [🔍 Explore](#high-performance-private-ai-infrastructure)           |
+| Building High-Performance, Private AI Infrastructure for the Enterprise                          | [🔍 Explore](#high-performance-private-ai-infrastructure)           |
 | Mastering the Model Context Protocol (MCP)                            | [🔍 Explore](#mastering-the-model-context-protocol)           |
 | Agent Memory Part I  (A Survey of Memory)                             | [🔍 Explore](#agent-memory-part-i)                            |
 | Agent Memory Part II (Building Memory Modules for Agentic AI Systems) | [🔍 Explore](#building-memory-modules-for-agentic-ai-Systems) |
 | Agent Evaluation (Eval) Engineering                                   | [🔍 Explore](#agent-eval)                        |
 ---
 <br>  
-<a id="introduction-to-ai-agents"></a>  
+<a id="building-ai-agents"></a>  
   
-# 📚 Introduction to AI Agents
+# 📚 Building AI Agents
   
 ### 🔑 Mind Map (Key Concepts)
 [📥 **Download High-Resolution Mind Map** (.jpg)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/introduction-to-ai-agents/agents-architecture-operations-and-evolution-mindmap.jpg)
@@ -33,13 +35,13 @@ A full-stack LLM engineering playbook — practical guides for building, deployi
     </b>
   </summary>  
 
-  ![Introduction to AI Agents Mindmap](./summaries/introduction-to-ai-agents/agents-architecture-operations-and-evolution-mindmap.jpg)
+  ![Building AI Agents Mindmap](./summaries/introduction-to-ai-agents/agents-architecture-operations-and-evolution-mindmap.jpg)
  
 </details>  
   
 ### 📑 Presentation Slides
 > 💡 **Tip:** Press `Ctrl` + `Click` (or Command + Click) to open in a new tab.   
-[📥 View the "Introduction to AI Agents" Slides (PDF)](./summaries/introduction-to-ai-agents/agents-architecture-operations-slides.pdf)   
+[📥 View the "Building AI Agents" Slides (PDF)](./summaries/introduction-to-ai-agents/agents-architecture-operations-slides.pdf)   
 [📥 **Download PDF** (Direct Link)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/introduction-to-ai-agents/agents-architecture-operations-slides.pdf)  
   
 
@@ -101,7 +103,7 @@ This guide covers LLM production, from Transformer architectures to advanced tec
 ### 🛠️ Hands-on Lab & Examples  
 👉 [**Explore Practical LLM Implementations in the LLMs-Lab repository on the Eric-LLMs GitHub profile.**](https://github.com/Eric-LLMs/LLMs-Lab)
   
-The production-grade principles discussed in this book—including **Fine-Tuning**, **RAG optimization**, **LangChain**, **Prompt Engineering**, **Function-Calling**, **Agent**, etc.—have each been researched as a standalone module, and each module features multiple project implementations.  
+The production-grade principles discussed in this guide—including **Fine-Tuning**, **RAG optimization**, **LangChain**, **Prompt Engineering**, **Function-Calling**, **Agent**, etc.—have each been researched as a standalone module, and each module features multiple project implementations.  
  
 [⬆️ Back to Top : Table of Contents](#top)  
   
@@ -110,7 +112,7 @@ The production-grade principles discussed in this book—including **Fine-Tuning
 
 <a id="high-performance-private-ai-infrastructure"></a>   
   
-# 📚 Building High-Performance, Private AI Infrastructure for the Enterprise (WIP)
+# 📚 Building High-Performance, Private AI Infrastructure for the Enterprise
 Covers the full-stack AI infrastructure for the enterprise — AI chips, compute clusters, high-speed networking, distributed training, inference serving, cluster scheduling, and secure private deployment.
 
 ### 🛠️ Hands-on Projects & Tools  
