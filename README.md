@@ -66,6 +66,8 @@ The following open-source projects represent prominent examples of agentic AI en
 | **[Hermes-Agent](https://github.com/NousResearch/hermes-agent)** | Self-improving AI agent with built-in learning loop | Skill creation from experience, cross-session memory, multi-channel (CLI/Telegram/Discord/Slack) |
 | **[OpenClaw](https://github.com/openclaw/openclaw)** | Personal AI assistant, local-first, any OS/platform | Local-first Gateway, multi-channel messaging, voice support, session & tool management |
 | **[claurst](https://github.com/Kuberwastaken/claurst)** | Community-maintained reference implementation of Claude Code | Internal architecture study, reverse-engineering insights, codebase structure reference |
+| **[Pi](https://github.com/earendil-works/pi)** | Open-source AI agent toolkit: unified multi-provider LLM API, agent runtime, and an interactive coding agent CLI | Self-extensible coding agent, multi-provider API, terminal UI library, npm supply-chain hardening |
+| **[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)** | DeepSeek AI's open-source agent harness with a plugin-driven architecture ("everything is a plugin") | Plugin composability via Cordis, Web UI, monorepo, developer preview |
 
 > These projects showcase diverse agent architectures — from developer-focused coding agents (Claude Code/OpenAI Codex/claurst) to general-purpose personal assistants (OpenClaw) and self-learning agents (Hermes-Agent). Studying their design decisions is valuable for building your own agent systems.
   
