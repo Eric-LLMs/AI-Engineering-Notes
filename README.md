@@ -123,17 +123,21 @@ Covers the full-stack AI infrastructure for the enterprise — AI chips, compute
 
 * **[AIInfra — AI Infrastructure Reference](https://github.com/Infrasys-AI/AIInfra):** An open-source reference covering the full-stack AI infrastructure for LLMs — from AI chips, compute clusters, and high-speed networking, to distributed training, inference optimization, and deployment — a hands-on resource for building high-performance, private AI infrastructure for the enterprise.
 
-**II. Inference Serving — High-Performance LLM Serving**
+**II. Cluster Scheduling & Orchestration**
 
-* **[vLLM](https://github.com/vllm-project/vllm):** A high-throughput, memory-efficient LLM serving engine (PagedAttention, continuous batching, prefix caching) — the de facto standard for high-performance private inference.
+* **[Volcano](https://github.com/volcano-sh/volcano):** A Kubernetes-native batch system with advanced GPU scheduling and job queueing — widely adopted for enterprise AI clusters.
 
-* **[SGLang](https://github.com/sgl-project/sglang):** A fast, structured-generation runtime for LLM inference, complementing vLLM with radix attention and efficient prefix reuse.
+* **[KubeRay](https://github.com/ray-project/kuberay):** A Kubernetes operator for running Ray clusters, bridging distributed compute with cloud-native orchestration.
 
-**III. Training, Pre-training & Fine-tuning**
+**III. Training & Post-training**
+
+#### Pre-training
 
 * **[DeepSpeed](https://github.com/microsoft/DeepSpeed):** Microsoft's deep learning optimization library — ZeRO memory optimization, mixed precision, and system optimizations for training and fine-tuning models at massive scale.
 
 * **[Megatron-LM](https://github.com/NVIDIA/Megatron-LM):** NVIDIA's large-scale language model training framework — tensor, pipeline, and sequence parallelism, often paired with DeepSpeed for pre-training.
+
+#### Fine-tuning
 
 * **[Unsloth](https://github.com/unslothai/unsloth):** A fast, memory-efficient fine-tuning library — up to 2x faster and 70% less memory for LoRA/QLoRA fine-tuning of LLMs.
 
@@ -141,27 +145,39 @@ Covers the full-stack AI infrastructure for the enterprise — AI chips, compute
 
 * **[HuggingFace PEFT](https://github.com/huggingface/peft):** The standard parameter-efficient fine-tuning library — LoRA, QLoRA, and more — widely used for enterprise model customization.
 
-**IV. Cluster Scheduling & Orchestration**
+#### RL / Alignment
 
-* **[Volcano](https://github.com/volcano-sh/volcano):** A Kubernetes-native batch system with advanced GPU scheduling and job queueing — widely adopted for enterprise AI clusters.
+* **[veRL](https://github.com/verl-project/verl):** ByteDance Seed's production-grade RL post-training framework — supports PPO, GRPO, DAPO, PRIME, and multi-turn tool-calling agents, with vLLM/SGLang rollout and FSDP/Megatron-LM training backends.
 
-* **[KubeRay](https://github.com/ray-project/kuberay):** A Kubernetes operator for running Ray clusters, bridging distributed compute with cloud-native orchestration.
+* **[TRL](https://github.com/huggingface/trl):** HuggingFace's official library for RLHF and post-training — the broadest algorithm coverage (SFT, DPO, GRPO, PPO, RLOO) with first-party OpenEnv integration.
 
-**V. Unified Gateway**
+* **[OpenRLHF](https://github.com/OpenRLHF/OpenRLHF):** A high-performance distributed RLHF framework built on Ray, vLLM, and DeepSpeed — supporting PPO, GRPO, REINFORCE++, and multi-turn agent training.
 
-* **[LiteLLM](https://github.com/BerriAI/litellm):** A unified LLM gateway with an OpenAI-compatible API — model routing, rate limits, budgets, and logging for enterprise private deployments.
+* **[ART](https://github.com/OpenPipe/ART):** OpenPipe's Agent Reinforcement Trainer — a lightweight GRPO framework that adds RL training loops (inference → reward → LoRA) to any existing Python application.
 
-**VI. Distributed Computing**
+**IV. Inference Serving & Deployment**
 
-* **[Ray](https://github.com/ray-project/ray):** A unified distributed framework for AI training, inference, and serving at scale.
+#### High-performance
 
-**VII. Lightweight Private Deployment**
+* **[vLLM](https://github.com/vllm-project/vllm):** A high-throughput, memory-efficient LLM serving engine (PagedAttention, continuous batching, prefix caching) — the de facto standard for high-performance private inference.
+
+* **[SGLang](https://github.com/sgl-project/sglang):** A fast, structured-generation runtime for LLM inference, complementing vLLM with radix attention and efficient prefix reuse.
+
+#### Lightweight
 
 * **[Ollama](https://github.com/ollama/ollama):** The simplest way to run LLMs locally — a lightweight, self-hosted private deployment option.
 
 * **[LocalAI](https://github.com/mudler/LocalAI):** A local, OpenAI-compatible, self-hosted inference server for private model deployment.
 
-**VIII. Security & Guardrails**
+**V. Distributed Computing**
+
+* **[Ray](https://github.com/ray-project/ray):** A unified distributed framework for AI training, inference, and serving at scale.
+
+**VI. Unified Gateway**
+
+* **[LiteLLM](https://github.com/BerriAI/litellm):** A unified LLM gateway with an OpenAI-compatible API — model routing, rate limits, budgets, and logging for enterprise private deployments.
+
+**VII. Security & Guardrails**
 
 * **[NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails):** NVIDIA's programmable guardrails framework for conversational AI — input, output, and retrieval rails.
 * **[PurpleLlama / Llama Guard](https://github.com/meta-llama/PurpleLlama):** Meta's Llama security toolkit — Llama Guard content-safety classifier and Prompt Guard injection detection.
