@@ -397,6 +397,7 @@ Implementing a robust evaluation pipeline requires specific infrastructure. The 
 | **[OpenEvals](https://github.com/langchain-ai/openevals)** | Graders | A library of pre-built "LLM-as-a-judge" prompts (Conciseness, Correctness, Coherence) compatible with LangSmith. |
 | **[AgentOps](https://github.com/AgentOps-AI/agentops)** | Agent DevOps & Monitoring | Session replays, agent benchmarking, and cost & reliability tracking for autonomous agents. |
 | **[Promptfoo](https://github.com/promptfoo/promptfoo)** | Red Teaming & Regression | Declarative eval configs, LLM regression testing, and adversarial red-teaming. |
+| **[Agent QA](https://github.com/vostride/agent-qa)** | Application QA | Natural-language web/mobile regression tests with persistent run memory, artifacts, CLI, MCP, and coding-agent skills. |
 
 #### 2. Architecture: Hybrid Agent (Fast vs. Slow)
 To balance cost and performance, we implement a **Hybrid Agent Architecture**:
@@ -417,4 +418,3 @@ To prevent "cheating" through shared state, every evaluation trial runs in a fre
 * **Cleanup & Anti-Leakage**: Aggressive state teardown (no shared history) and guard against goal leakage that could let the agent take shortcuts via shared state.
 
 [⬆️ Back to Top : Table of Contents](#top)
-
