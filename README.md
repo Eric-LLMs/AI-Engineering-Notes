@@ -12,68 +12,13 @@ A full-stack LLM engineering playbook — practical guides for building, deployi
 
 | 📚 Content                                                       | 🔗 Quick Link                                                 |
 |:----------------------------------------------------------------------|:--------------------------------------------------------------|
-| Building AI Agents                                             | [🔍 Explore](#building-ai-agents)                      |
 | Building LLMs for Production                                          | [🔍 Explore](#building-llms-for-production)                   |
 | Building High-Performance, Private AI Infrastructure for the Enterprise                          | [🔍 Explore](#high-performance-private-ai-infrastructure)           |
+| Building AI Agents                                             | [🔍 Explore](#building-ai-agents)                      |
 | Mastering the Model Context Protocol (MCP)                            | [🔍 Explore](#mastering-the-model-context-protocol)           |
 | Agent Memory Part I  (A Survey of Memory)                             | [🔍 Explore](#agent-memory-part-i)                            |
 | Agent Memory Part II (Building Memory Modules for Agentic AI Systems) | [🔍 Explore](#building-memory-modules-for-agentic-ai-Systems) |
 | Agent Evaluation (Eval) Engineering                                   | [🔍 Explore](#agent-eval)                        |
----
-<br>  
-<a id="building-ai-agents"></a>  
-  
-# 📚 Building AI Agents
-  
-### 🔑 Mind Map (Key Concepts)
-[📥 **Download High-Resolution Mind Map** (.jpg)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/introduction-to-ai-agents/agents-architecture-operations-and-evolution-mindmap.jpg)
-  <br>  
-<details>
-  <summary>
-    <b><em><a>🔍 Click here to unfold the full Mind Map (agents-architecture-operations-and-evolution-mindmap.jpg)</a></em> 
-    <br> (点击展开完整思维导图)
-    </b>
-  </summary>  
-
-  ![Building AI Agents Mindmap](./summaries/introduction-to-ai-agents/agents-architecture-operations-and-evolution-mindmap.jpg)
- 
-</details>  
-  
-### 📑 Presentation Slides
-> 💡 **Tip:** Press `Ctrl` + `Click` (or Command + Click) to open in a new tab.   
-[📥 View the "Building AI Agents" Slides (PDF)](./summaries/introduction-to-ai-agents/agents-architecture-operations-slides.pdf)   
-[📥 **Download PDF** (Direct Link)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/introduction-to-ai-agents/agents-architecture-operations-slides.pdf)  
-  
-
-### 🛠️ Hands-on: A Minimal ReAct Agent  
-👉 [**View the AI Agent Project in the LLMs-Lab repository on the Eric-LLMs GitHub profile.**](https://github.com/Eric-LLMs/LLMs-Lab/tree/main/Agent/Agent_Project)
-  
-To bridge theory with practice, I developed a modular AI Agent project that implements autonomous reasoning and task execution:
-
-* **Architecture:** Utilizes a decoupled structure with dedicated directories for `Agent` logic, `Tools`, `Utils`, and `Prompts`.
-* **Reasoning Loop:** Features an `AutoGPT.py` implementation using **ReAct (Reasoning and Acting)** logic to handle complex, multi-step goal decomposition.
-* **Functional Tools:** Includes custom tools for deep data analysis (Excel processing via Pandas), automated communication via email, PDF-based QA interrogation (**FileQATool**), requirements-driven document generation (**WriterTool**), and dynamic script-based auditing of structured files using custom heuristics and thresholds (**PythonTool**).
-* **End-to-End Workflow:** Supports real-world scenarios, such as identifying underperforming suppliers from sales records and autonomously drafting/sending notifications.
-
-### 🧰 Key Open-Source Projects & References
-
-The following open-source projects represent prominent examples of agentic AI engineering:
-
-| Project | Description | Key Strengths |
-| :--- | :--- | :--- |
-| **[Claude Code](https://github.com/anthropics/claude-code)** | Anthropic's official terminal-based agentic coding tool | Agentic coding, terminal-native, full codebase understanding, git workflows |
-| **[OpenAI Codex](https://github.com/openai/codex)** | OpenAI's open-source agentic coding CLI | Agentic coding, terminal-native, sandboxed execution, bash tool use |
-| **[Hermes-Agent](https://github.com/NousResearch/hermes-agent)** | Self-improving AI agent with built-in learning loop | Skill creation from experience, cross-session memory, multi-channel (CLI/Telegram/Discord/Slack) |
-| **[OpenClaw](https://github.com/openclaw/openclaw)** | Personal AI assistant, local-first, any OS/platform | Local-first Gateway, multi-channel messaging, voice support, session & tool management |
-| **[claurst](https://github.com/Kuberwastaken/claurst)** | Community-maintained reference implementation of Claude Code | Internal architecture study, reverse-engineering insights, codebase structure reference |
-| **[Pi](https://github.com/earendil-works/pi)** | Open-source AI agent toolkit: unified multi-provider LLM API, agent runtime, and an interactive coding agent CLI | Self-extensible coding agent, multi-provider API, terminal UI library, npm supply-chain hardening |
-| **[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)** | DeepSeek AI's open-source agent harness with a plugin-driven architecture ("everything is a plugin") | Plugin composability via Cordis, Web UI, monorepo, developer preview |
-
-> These projects showcase diverse agent architectures — from developer-focused coding agents (Claude Code/OpenAI Codex/claurst) to general-purpose personal assistants (OpenClaw) and self-learning agents (Hermes-Agent). Studying their design decisions is valuable for building your own agent systems.
-  
-  
-[⬆️ Back to Top : Table of Contents](#top)  
-  
 ---
 <br>  
 <a id="building-llms-for-production"></a>   
@@ -189,6 +134,61 @@ Covers the full-stack AI infrastructure for the enterprise — AI chips, compute
   
 ---
 <br>  
+<a id="building-ai-agents"></a>  
+  
+# 📚 Building AI Agents
+  
+### 🔑 Mind Map (Key Concepts)
+[📥 **Download High-Resolution Mind Map** (.jpg)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/introduction-to-ai-agents/agents-architecture-operations-and-evolution-mindmap.jpg)
+  <br>  
+<details>
+  <summary>
+    <b><em><a>🔍 Click here to unfold the full Mind Map (agents-architecture-operations-and-evolution-mindmap.jpg)</a></em> 
+    <br> (点击展开完整思维导图)
+    </b>
+  </summary>  
+
+  ![Building AI Agents Mindmap](./summaries/introduction-to-ai-agents/agents-architecture-operations-and-evolution-mindmap.jpg)
+ 
+</details>  
+  
+### 📑 Presentation Slides
+> 💡 **Tip:** Press `Ctrl` + `Click` (or Command + Click) to open in a new tab.   
+[📥 View the "Building AI Agents" Slides (PDF)](./summaries/introduction-to-ai-agents/agents-architecture-operations-slides.pdf)   
+[📥 **Download PDF** (Direct Link)](https://raw.githubusercontent.com/Eric-LLMs/Awesome-AI-Engineering/main/summaries/introduction-to-ai-agents/agents-architecture-operations-slides.pdf)  
+  
+
+### 🛠️ Hands-on: A Minimal ReAct Agent  
+👉 [**View the AI Agent Project in the LLMs-Lab repository on the Eric-LLMs GitHub profile.**](https://github.com/Eric-LLMs/LLMs-Lab/tree/main/Agent/Agent_Project)
+  
+To bridge theory with practice, I developed a modular AI Agent project that implements autonomous reasoning and task execution:
+
+* **Architecture:** Utilizes a decoupled structure with dedicated directories for `Agent` logic, `Tools`, `Utils`, and `Prompts`.
+* **Reasoning Loop:** Features an `AutoGPT.py` implementation using **ReAct (Reasoning and Acting)** logic to handle complex, multi-step goal decomposition.
+* **Functional Tools:** Includes custom tools for deep data analysis (Excel processing via Pandas), automated communication via email, PDF-based QA interrogation (**FileQATool**), requirements-driven document generation (**WriterTool**), and dynamic script-based auditing of structured files using custom heuristics and thresholds (**PythonTool**).
+* **End-to-End Workflow:** Supports real-world scenarios, such as identifying underperforming suppliers from sales records and autonomously drafting/sending notifications.
+
+### 🧰 Key Open-Source Projects & References
+
+The following open-source projects represent prominent examples of agentic AI engineering:
+
+| Project | Description | Key Strengths |
+| :--- | :--- | :--- |
+| **[Claude Code](https://github.com/anthropics/claude-code)** | Anthropic's official terminal-based agentic coding tool | Agentic coding, terminal-native, full codebase understanding, git workflows |
+| **[OpenAI Codex](https://github.com/openai/codex)** | OpenAI's open-source agentic coding CLI | Agentic coding, terminal-native, sandboxed execution, bash tool use |
+| **[Hermes-Agent](https://github.com/NousResearch/hermes-agent)** | Self-improving AI agent with built-in learning loop | Skill creation from experience, cross-session memory, multi-channel (CLI/Telegram/Discord/Slack) |
+| **[OpenClaw](https://github.com/openclaw/openclaw)** | Personal AI assistant, local-first, any OS/platform | Local-first Gateway, multi-channel messaging, voice support, session & tool management |
+| **[claurst](https://github.com/Kuberwastaken/claurst)** | Community-maintained reference implementation of Claude Code | Internal architecture study, reverse-engineering insights, codebase structure reference |
+| **[Pi](https://github.com/earendil-works/pi)** | Open-source AI agent toolkit: unified multi-provider LLM API, agent runtime, and an interactive coding agent CLI | Self-extensible coding agent, multi-provider API, terminal UI library, npm supply-chain hardening |
+| **[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)** | DeepSeek AI's open-source agent harness with a plugin-driven architecture ("everything is a plugin") | Plugin composability via Cordis, Web UI, monorepo, developer preview |
+
+> These projects showcase diverse agent architectures — from developer-focused coding agents (Claude Code/OpenAI Codex/claurst) to general-purpose personal assistants (OpenClaw) and self-learning agents (Hermes-Agent). Studying their design decisions is valuable for building your own agent systems.
+  
+  
+[⬆️ Back to Top : Table of Contents](#top)  
+  
+---
+<br>  
 
 
 <a id="mastering-the-model-context-protocol"></a>   
@@ -220,9 +220,18 @@ A deep dive into the Model Context Protocol (MCP) — the open standard that con
 ### 🧰 Key Frameworks & Tools
 
 The official Model Context Protocol SDKs and reference implementations for building and connecting MCP servers:
+* **[specification](https://github.com/modelcontextprotocol/modelcontextprotocol)**: The official protocol specification and schema — core primitives (tools, resources, prompts) and transports.
 * **[typescript-sdk](https://github.com/modelcontextprotocol/typescript-sdk)**: The official TypeScript SDK for building MCP servers and clients.
 * **[python-sdk](https://github.com/modelcontextprotocol/python-sdk)**: The official Python SDK for building MCP servers and clients.
 * **[servers — Official Reference Implementations](https://github.com/modelcontextprotocol/servers)**: The official collection of reference MCP servers, including filesystem, fetch, git, memory, and sequential thinking.
+* **[registry](https://github.com/modelcontextprotocol/registry)**: The official, community-driven MCP server registry — an "app store" for discovering standardized MCP servers.
+* **[FastMCP](https://github.com/jlowin/fastmcp)** *(community)*: The most popular high-level Python framework for building MCP servers — define tools and resources in a few lines of code.
+
+### 🔗 Related Protocols
+
+The Model Context Protocol connects agents to tools and data. For agent-to-agent collaboration and client interfaces, see:
+* **[A2A (Agent2Agent Protocol)](https://github.com/a2aproject/A2A)**: The open standard for agent-to-agent communication — lets agents discover each other's capabilities and collaborate on tasks.
+* **[ACP (Agent Client Protocol)](https://github.com/coder/agent-client-protocol)**: A protocol for connecting agents to editors and frontends.
 
 ### 🛠️ Hands-on Projects & Tools  
 
