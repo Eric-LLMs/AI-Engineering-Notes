@@ -94,9 +94,9 @@ Covers the full-stack AI infrastructure for the enterprise — AI chips, compute
 
 * **[veRL](https://github.com/verl-project/verl):** ByteDance Seed's production-grade RL post-training framework — supports PPO, GRPO, DAPO, PRIME, and multi-turn tool-calling agents, with vLLM/SGLang rollout and FSDP/Megatron-LM training backends.
 
-* **[TRL](https://github.com/huggingface/trl):** HuggingFace's official library for RLHF and post-training — the broadest algorithm coverage (SFT, DPO, GRPO, PPO, RLOO) with first-party OpenEnv integration.
-
 * **[OpenRLHF](https://github.com/OpenRLHF/OpenRLHF):** A high-performance distributed RLHF framework built on Ray, vLLM, and DeepSpeed — supporting PPO, GRPO, REINFORCE++, and multi-turn agent training.
+
+* **[TRL](https://github.com/huggingface/trl):** HuggingFace's official library for RLHF and post-training — the broadest algorithm coverage (SFT, DPO, GRPO, PPO, RLOO) with first-party OpenEnv integration.
 
 * **[ART](https://github.com/OpenPipe/ART):** OpenPipe's Agent Reinforcement Trainer — a lightweight GRPO framework that adds RL training loops (inference → reward → LoRA) to any existing Python application.
 
@@ -125,9 +125,9 @@ Covers the full-stack AI infrastructure for the enterprise — AI chips, compute
 **VII. Security & Guardrails**
 
 * **[NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails):** NVIDIA's programmable guardrails framework for conversational AI — input, output, and retrieval rails.
+* **[LLM Guard](https://github.com/protectai/llm-guard):** Protect AI's input/output security library for detecting prompt injection and sanitizing LLM traffic.
 * **[PurpleLlama / Llama Guard](https://github.com/meta-llama/PurpleLlama):** Meta's Llama security toolkit — Llama Guard content-safety classifier and Prompt Guard injection detection.
 * **[Garak](https://github.com/NVIDIA/garak):** NVIDIA's LLM vulnerability scanner for automated red-teaming.
-* **[LLM Guard](https://github.com/protectai/llm-guard):** Protect AI's input/output security library for detecting prompt injection and sanitizing LLM traffic.
 * **[Microsoft Presidio](https://github.com/microsoft/presidio):** PII detection and data anonymization for compliance in enterprise AI deployments.
 
 [⬆️ Back to Top : Table of Contents](#top)  
@@ -175,10 +175,10 @@ The following open-source projects represent prominent examples of agentic AI en
 | Project | Description | Key Strengths |
 | :--- | :--- | :--- |
 | **[Claude Code](https://github.com/anthropics/claude-code)** | Anthropic's official terminal-based agentic coding tool | Agentic coding, terminal-native, full codebase understanding, git workflows |
+| **[claurst](https://github.com/Kuberwastaken/claurst)** | Community-maintained reference implementation of Claude Code | Internal architecture study, reverse-engineering insights, codebase structure reference |
 | **[OpenAI Codex](https://github.com/openai/codex)** | OpenAI's open-source agentic coding CLI | Agentic coding, terminal-native, sandboxed execution, bash tool use |
 | **[Hermes-Agent](https://github.com/NousResearch/hermes-agent)** | Self-improving AI agent with built-in learning loop | Skill creation from experience, cross-session memory, multi-channel (CLI/Telegram/Discord/Slack) |
 | **[OpenClaw](https://github.com/openclaw/openclaw)** | Personal AI assistant, local-first, any OS/platform | Local-first Gateway, multi-channel messaging, voice support, session & tool management |
-| **[claurst](https://github.com/Kuberwastaken/claurst)** | Community-maintained reference implementation of Claude Code | Internal architecture study, reverse-engineering insights, codebase structure reference |
 | **[Pi](https://github.com/earendil-works/pi)** | Open-source AI agent toolkit: unified multi-provider LLM API, agent runtime, and an interactive coding agent CLI | Self-extensible coding agent, multi-provider API, terminal UI library, npm supply-chain hardening |
 | **[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)** | DeepSeek AI's open-source agent harness with a plugin-driven architecture ("everything is a plugin") | Plugin composability via Cordis, Web UI, monorepo, developer preview |
 
@@ -389,14 +389,14 @@ Implementing a robust evaluation pipeline requires specific infrastructure. The 
 | :--- | :--- | :--- |
 | **[LangSmith](https://smith.langchain.com/)** | Tracing & Debugging | Full trajectory tracing, `runnableConfig` tagging for A/B testing, and dataset management. |
 | **[LangFuse](https://langfuse.com/)** | Observability | Open-source alternative for observability, prompt management, and lightweight evaluation. |
+| **[Arize Phoenix](https://github.com/Arize-ai/phoenix)** | Observability & Eval | Open-source LLM tracing, embedding analysis, and RAG/agent evaluation. |
+| **[W&B Weave](https://github.com/wandb/weave)** | Tracing & Eval | Lightweight LLM instrumentation, eval harnesses, and dataset versioning. |
 | **[DeepEval](https://github.com/confident-ai/deepeval)** | Unit Testing | "Pytest for LLMs". Specific metrics for RAG (Hallucination, Answer Relevancy) and Agents. |
+| **[OpenAI Evals](https://github.com/openai/evals)** | Evaluation Framework | OpenAI's open-source framework for model-graded evals — YAML/JSON config-driven, custom eval classes, and dataset registries. |
+| **[Braintrust](https://github.com/braintrustdata/braintrust-sdk)** | Evaluation Platform | Dataset management, LLM-as-a-judge scoring, online evals, and A/B testing. |
 | **[OpenEvals](https://github.com/langchain-ai/openevals)** | Graders | A library of pre-built "LLM-as-a-judge" prompts (Conciseness, Correctness, Coherence) compatible with LangSmith. |
 | **[AgentOps](https://github.com/AgentOps-AI/agentops)** | Agent DevOps & Monitoring | Session replays, agent benchmarking, and cost & reliability tracking for autonomous agents. |
 | **[Promptfoo](https://github.com/promptfoo/promptfoo)** | Red Teaming & Regression | Declarative eval configs, LLM regression testing, and adversarial red-teaming. |
-| **[Braintrust](https://github.com/braintrustdata/braintrust-sdk)** | Evaluation Platform | Dataset management, LLM-as-a-judge scoring, online evals, and A/B testing. |
-| **[Arize Phoenix](https://github.com/Arize-ai/phoenix)** | Observability & Eval | Open-source LLM tracing, embedding analysis, and RAG/agent evaluation. |
-| **[W&B Weave](https://github.com/wandb/weave)** | Tracing & Eval | Lightweight LLM instrumentation, eval harnesses, and dataset versioning. |
-| **[OpenAI Evals](https://github.com/openai/evals)** | Evaluation Framework | OpenAI's open-source framework for model-graded evals — YAML/JSON config-driven, custom eval classes, and dataset registries. |
 
 #### 2. Architecture: Hybrid Agent (Fast vs. Slow)
 To balance cost and performance, we implement a **Hybrid Agent Architecture**:
