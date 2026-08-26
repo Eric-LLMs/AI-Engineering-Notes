@@ -48,10 +48,18 @@ This guide covers LLM production, from Transformer architectures to advanced tec
   
 
 ### 🛠️ Hands-on Lab & Examples  
-👉 [**Explore Practical LLM Implementations in the LLMs-Lab repository on the Eric-LLMs GitHub profile.**](https://github.com/Eric-LLMs/LLMs-Lab)
-  
-The production-grade principles discussed in this guide—including **Fine-Tuning**, **RAG optimization**, **LangChain**, **Prompt Engineering**, **Function-Calling**, **Agent**, etc.—have each been researched as a standalone module, and each module features multiple project implementations.  
- 
+
+Hands-on implementations of the production-grade principles covered in this guide:
+
+* **[DeepDive](https://github.com/Eric-LLMs/DeepDive):** Production-grade AI system for personalized learning — agentic tutoring, dual-track memory, hybrid RAG, personal/team cloud storage, and self-hosted LLM infrastructure. Highlights:
+  - **Config-driven RAG pipeline**: plug-and-play retrieval nodes (vector + keyword recall, RRF fusion, cross-encoder rerank, parent-expand, relevance check) that you add / remove / reorder / toggle live from the admin console — no code, no restart; chunking preview, golden-set Eval (Recall@k / Precision@k / MRR), and degrade-never-break retrieval.
+  - **Agent kernel**: ReactLoopAgent with cache-boundary prompt assembly, deferred tool loading, dual-track memory (PG tsvector + pgvector via RRF, recency-weighted), skill catalog, and a read-only sandbox gating every tool call (READ / WRITE / NETWORK).
+  - **Cloud drive**: private **My Drive** + shared **workspaces** with owner / admin / editor / viewer roles, member management, and an append-only activity log; per-user object store with SHA-256 content-addressing (identical files deduplicate to one ref-counted blob), 8 MB resumable chunked upload, multi-level folders, trash & 30-day retention, per-file ACLs and public links, and in-window previews for PDF / video / audio / Office documents.
+  - **Permissions & key management**: admin console for roles, users, LLM provider credentials + model catalog + routing weights, a per-user key-grant matrix (masked `sk-***`), SMTP, and stateless signed admin sessions.
+  - **Local-first & self-hosted**: Electron workbench works offline (file tree, multi-format viewer, video screenshots), big media is processed on the local client, and the whole stack (PostgreSQL/pgvector, Redis, TEI embedding, Kokoro TTS, LiteLLM gateway) runs via docker-compose.
+
+* **[LLMs-Lab](https://github.com/Eric-LLMs/LLMs-Lab):** Research modules covering **Fine-Tuning**, **RAG optimization**, **LangChain**, **Prompt Engineering**, **Function-Calling**, **Agent**, etc. — each studied as a standalone module with multiple project implementations.
+
 [⬆️ Back to Top : Table of Contents](#top)  
   
 ---
