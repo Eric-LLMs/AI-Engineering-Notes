@@ -131,6 +131,7 @@ Covers the full-stack AI infrastructure for the enterprise — AI chips, compute
 **VI. Unified Gateway**
 
 * **[LiteLLM](https://github.com/BerriAI/litellm):** A unified LLM gateway with an OpenAI-compatible API — model routing, rate limits, budgets, and logging for enterprise private deployments.
+* **[XiuRouter](https://router.xiu.ai/):** A hosted multi-model API with native OpenAI Responses and Chat Completions, Anthropic Messages, and Gemini GenerateContent routes, scoped API keys, usage-based pricing, and request-level usage and cost records.
 
 **VII. Security & Guardrails**
 
