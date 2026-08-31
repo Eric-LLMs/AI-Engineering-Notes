@@ -191,7 +191,6 @@ The following open-source projects represent prominent examples of agentic AI en
 | **[OpenClaw](https://github.com/openclaw/openclaw)** | Personal AI assistant, local-first, any OS/platform | Local-first Gateway, multi-channel messaging, voice support, session & tool management |
 | **[Pi](https://github.com/earendil-works/pi)** | Open-source AI agent toolkit: unified multi-provider LLM API, agent runtime, and an interactive coding agent CLI | Self-extensible coding agent, multi-provider API, terminal UI library, npm supply-chain hardening |
 | **[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)** | DeepSeek AI's open-source agent harness with a plugin-driven architecture ("everything is a plugin") | Plugin composability via Cordis, Web UI, monorepo, developer preview |
-| **[SandBase Harness](https://github.com/sandbaseai/sandbase-harness)** | Local-first, self-hosted runtime for building and operating AI agents with persistent sessions, event streams, MCP tools, and sandboxed execution | Docker/Kubernetes deployment, approvals, audit and replay, extensible skills and credentials |
 
 > These projects showcase diverse agent architectures — from developer-focused coding agents (Claude Code/OpenAI Codex/claurst) to general-purpose personal assistants (OpenClaw) and self-learning agents (Hermes-Agent). Studying their design decisions is valuable for building your own agent systems.
   
@@ -408,7 +407,6 @@ Implementing a robust evaluation pipeline requires specific infrastructure. The 
 | **[OpenEvals](https://github.com/langchain-ai/openevals)** | Graders | A library of pre-built "LLM-as-a-judge" prompts (Conciseness, Correctness, Coherence) compatible with LangSmith. |
 | **[AgentOps](https://github.com/AgentOps-AI/agentops)** | Agent DevOps & Monitoring | Session replays, agent benchmarking, and cost & reliability tracking for autonomous agents. |
 | **[Promptfoo](https://github.com/promptfoo/promptfoo)** | Red Teaming & Regression | Declarative eval configs, LLM regression testing, and adversarial red-teaming. |
-| **[Agent QA](https://github.com/vostride/agent-qa)** | Application QA | Natural-language web/mobile regression tests with persistent run memory, artifacts, CLI, MCP, and coding-agent skills. |
 
 #### 2. Architecture: Hybrid Agent (Fast vs. Slow)
 To balance cost and performance, we implement a **Hybrid Agent Architecture**:
